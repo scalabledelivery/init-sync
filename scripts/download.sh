@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 
 if [[ ${ordinal} -eq 0 ]]; then
     echo "skipping ordinal 0, it should handle genesis"

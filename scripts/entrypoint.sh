@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 
 if [[ ${DEBUG} != 0 ]]; then
     echo "Opening /bin/bash for debugging and setting DEBUG=0"
