@@ -10,6 +10,13 @@ on:
     - cron: '00 0 * * 1'
   push:
     branches: [ "master", "v*.*", "latest" ]
+  workflow_dispatch:
+    inputs:
+      comment:
+        description: 'Just a comment about the build'
+        required: true
+        default: 'No comment provided.'
+
 
 env:
   # Use docker.io for Docker Hub if empty
