@@ -12,7 +12,7 @@ if [ -f "${SHARE_DIR}/.init-sync" ]; then
 fi
 
 if [ "${SERVICE_NAME}" == "" ]; then
-    echo "SERVICE_NAME must be set to the name of the headless service"
+    echo "SERVICE_NAME must be set so we can contact POD_BASE_NAME-(ORDINAL-1).SERVICE_NAME"
     exit 1
 fi
 
